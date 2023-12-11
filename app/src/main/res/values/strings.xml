@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TaskifyPlus</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="fcm_message">fcm_message</string>
+    <string name="msg_token_fmt">FCM registration Token: %s</string>
+
+    <string-array name="category">
+        <item>All</item>
+        <item>Appointment</item>
+        <item>Medicine</item>
+        <item>Workout</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

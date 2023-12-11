@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Doctor_Theme"
+    tools:context=".AddItemFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Activity Details"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etInputTaskTitle"
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/background_edittext"
+                android:drawableStart="@drawable/baseline_event_note_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Activity Title"
+                android:inputType="text"
+                android:padding="16dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtInputPatient"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/background_edittext"
+                android:focusable="false"
+                android:outlineProvider="none"
+                app:boxStrokeColor="@android:color/transparent"
+                app:boxStrokeWidth="0dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/tvHomePatientFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/baseline_group_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Project Member "
+                    android:inputType="none"
+                    android:padding="16dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvInputDate"
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_edittext"
+                android:drawableStart="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Date"
+                android:inputType="text"
+                android:padding="16dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvInputTime"
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_edittext"
+                android:drawableStart="@drawable/baseline_av_timer_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Time"
+                android:inputType="text"
+                android:padding="16dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textColorHint="@color/dark_grey"
+                android:textSize="18sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+
+                android:background="@drawable/background_edittext"
+                android:focusable="false"
+                android:outlineProvider="none"
+                app:boxStrokeColor="@android:color/transparent"
+                app:boxStrokeWidth="0dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/tvCategoryFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/baseline_category_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Category"
+                    android:inputType="none"
+                    android:padding="16dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_grey" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/etInputDescription"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_edittext"
+                android:drawableStart="@drawable/baseline_edit_note_24"
+                android:drawablePadding="10dp"
+                android:ems="16"
+                android:gravity="start|top"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:padding="16dp"
+                android:scrollbars="vertical"
+                android:verticalScrollbarPosition="right" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:text="Add"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="Delete"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
